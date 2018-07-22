@@ -1,4 +1,17 @@
-<h2>Tes</h2>
-<img src="{{usaha.logo}}"> {{ usaha.nama }}
-<br> {{ usaha.slogan }}
-<br> {{ usaha.keterangan }}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4 p-4">
+      <h5 class="mb-3">{{ usaha.nama }}</h5>
+      <span>{{ usaha.slogan }}</span>
+      <img src="{{ usaha.logo }}" class="img-fluid product-image">
+    </div>
+    <div class="col-md-4 p-4">
+      <h5 class="mb-3">Informasi Usaha</h5>
+      <span>{{ usaha.keterangan }}</span>
+
+      <div class="border p-2 mt-3 mb-3">
+        <span>Telepon : {{usaha.telp}}</span>
+      </div>
+    </div>
+  </div>
+</div>
