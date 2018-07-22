@@ -6,7 +6,9 @@
   <div class="row">
     <div *ngFor="let produk of produks" class="col-md-3 d-flex align-items-stretch">
       <div class="card mb-4">
-        <img class="card-img-top" src={{produk.foto}} alt="Card image cap">
+        <a routerLink="/produk/{{produk.id}}">
+          <img class="card-img-top" src={{produk.foto}} alt="Card image cap">
+        </a>
         <div class="card-body">
           <h5 class="card-title mb-1">{{produk.nama}}</h5>
           <p class="text-success">Rp. {{ produk.harga }}</p>

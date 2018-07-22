@@ -1,4 +1,4 @@
-<div class="card text-center">
+<!-- <div class="card text-center">
   <div class="card-header">
     Detail Produk
   </div>
@@ -9,5 +9,41 @@
   </div>
   <div class="card-footer text-muted">
     2 days ago
+  </div>
+</div> -->
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4 p-4">
+      <h5 class="mb-3">{{ produk.nama }}</h5>
+      <img src="{{ produk.foto }}" class="img-fluid product-image">
+    </div>
+    <div class="col-md-4 p-4">
+      <h5 class="mb-3">Informasi Produk</h5>
+      <span>{{ produk.keterangan }}</span>
+
+      <h4 class="mb-3 mt-3 text-success">Rp. {{ produk.harga }}</h4>
+
+      <div class="border p-2 mt-3 mb-3">
+        <span>Berat : {{produk.berat}} Gram</span>
+        <br>
+        <span>Satuan : {{produk.satuan}}</span>
+      </div>
+
+      <a href="" class="btn btn-success">Masukkan ke keranjang</a>
+    </div>
+
+    <div class="col-md-4 border-left p-4">
+      <h5 class="mb-3">Informasi Usaha</h5>
+      <span>
+        <b>UKM Sejahtera</b>
+      </span>
+
+      <img src="assets/images/usaha/usaha.jpg" alt="usaha" class="img-fluid mt-3 mb-3">
+
+      <span>UKM yang selalu sejahtera selama lamanya</span>
+
+      <a routerLink="/usaha/{{ produk.id_usaha }}" class="btn btn-primary mt-3">Detail Usaha</a>
+    </div>
   </div>
 </div>
