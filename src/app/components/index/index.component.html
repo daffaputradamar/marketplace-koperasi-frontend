@@ -1,3 +1,21 @@
-<p>
-  index works!
-</p>
+<br/>
+<div class="row">
+  <div *ngFor="let produk of produks" class="col-md-4">
+    <div class="card">
+      <img class="card-img-top" src={{produk.foto}} alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{produk.nama}}</h5>
+        <p class="card-text">{{ produk.keterangan }}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Harga: {{ produk.harga }}</li>
+        <li class="list-group-item">Berat: {{ produk.berat }}</li>
+        <li class="list-group-item">Satuan: {{ produk.satuan }}</li>
+      </ul>
+      <div class="card-body">
+        <a routerLink="/" class="card-link">Card link</a>
+        <a routerLink="/" class="card-link">Another link</a>
+      </div>
+    </div>
+  </div>
+</div>
