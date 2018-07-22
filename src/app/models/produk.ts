@@ -7,4 +7,5 @@ export interface Produk {
   berat: number;
   satuan: string;
   id_kategori: number;
+  id_usaha: number;
 }

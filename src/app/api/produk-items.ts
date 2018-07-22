@@ -9,7 +9,8 @@ export const PRODUK_ITEMS: Produk[] = [
     harga: 10000,
     berat: 10,
     satuan: "gram",
-    id_kategori: 3
+    id_kategori: 3,
+    id_usaha: 1
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ export const PRODUK_ITEMS: Produk[] = [
     harga: 8000,
     berat: 80,
     satuan: "gram",
-    id_kategori: 3
+    id_kategori: 3,
+    id_usaha: 1
   },
   {
     id: 3,
@@ -29,7 +31,8 @@ export const PRODUK_ITEMS: Produk[] = [
     harga: 80000,
     berat: 20,
     satuan: "gram",
-    id_kategori: 1
+    id_kategori: 1,
+    id_usaha: 1
   },
   {
     id: 4,
@@ -39,7 +42,8 @@ export const PRODUK_ITEMS: Produk[] = [
     harga: 10000,
     berat: 10,
     satuan: "gram",
-    id_kategori: 3
+    id_kategori: 3,
+    id_usaha: 2
   },
   {
     id: 5,
@@ -49,7 +53,8 @@ export const PRODUK_ITEMS: Produk[] = [
     harga: 8000,
     berat: 80,
     satuan: "gram",
-    id_kategori: 3
+    id_kategori: 3,
+    id_usaha: 2
   },
   {
     id: 6,
@@ -59,6 +64,7 @@ export const PRODUK_ITEMS: Produk[] = [
     harga: 80000,
     berat: 20,
     satuan: "gram",
-    id_kategori: 1
+    id_kategori: 1,
+    id_usaha: 2
   }
 ];

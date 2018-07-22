@@ -6,13 +6,15 @@ import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./layout/navbar/navbar.component";
 import { IndexComponent } from "./components/index/index.component";
 import { ProdukDetailComponent } from "./components/produk-detail/produk-detail.component";
+import { UsahaDetailComponent } from './components/usaha-detail/usaha-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     IndexComponent,
-    ProdukDetailComponent
+    ProdukDetailComponent,
+    UsahaDetailComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
