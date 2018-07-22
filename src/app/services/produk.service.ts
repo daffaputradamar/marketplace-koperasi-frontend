@@ -13,4 +13,8 @@ export class ProdukService {
   getProduk() {
     return this.produkItems;
   }
+
+  getProdukById(id: number) {
+    return this.produkItems[id - 1];
+  }
 }
