@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
 import { IndexComponent } from "./components/index/index.component";
+import { ProdukComponent } from "./components/produk/produk.component";
 import { ProdukDetailComponent } from "./components/produk-detail/produk-detail.component";
 import { UsahaDetailComponent } from "./components/usaha-detail/usaha-detail.component";
 import { KeranjangComponent } from "./components/keranjang/keranjang.component";
@@ -20,7 +21,11 @@ const routes: Routes = [
     component: UsahaDetailComponent
   },
   {
-    path: "/keranjang",
+    path: "produk",
+    component: ProdukComponent
+  },
+  {
+    path: "keranjang",
     component: KeranjangComponent
   }
 ];

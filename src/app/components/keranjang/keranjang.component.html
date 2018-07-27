@@ -1,3 +1,32 @@
-<p>
-  keranjang works!
-</p>
+<div class="container mt-5">
+  <h4 class="mb-4">Keranjang</h4>
+
+  <h5 class="mb-3">TokoSukaMaju</h5>
+  <table class="table text-center mb-4">
+    <thead class="thead-light">
+      <tr>
+        <th colspan="2">Produk</th>
+        <th scope="col">Jumlah</th>
+        <th scope="col">Harga</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let produk of produks">
+        <td class="align-middle">
+          <img src="{{produk.foto}}" alt="" class="img-fluid small-image">
+        </td>
+        <td class="align-middle text-left">{{produk.nama}}</td>
+        <td class="align-middle">1</td>
+        <td class="align-middle">{{produk.harga}}</td>
+      </tr>
+      <tr>
+        <td class="text-right" colspan="3">
+          <h5 class="text-secondary">Jumlah</h5>
+        </td>
+        <td>
+          <h4 class="text-warning">Rp.196000</h4>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
