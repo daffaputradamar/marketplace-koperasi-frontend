@@ -7,6 +7,8 @@ import { NavbarComponent } from "./layout/navbar/navbar.component";
 import { IndexComponent } from "./components/index/index.component";
 import { ProdukDetailComponent } from "./components/produk-detail/produk-detail.component";
 import { UsahaDetailComponent } from './components/usaha-detail/usaha-detail.component';
+import { ProdukComponent } from './components/produk/produk.component';
+import { ProductCardComponent } from './reuseable-components/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { UsahaDetailComponent } from './components/usaha-detail/usaha-detail.com
     NavbarComponent,
     IndexComponent,
     ProdukDetailComponent,
-    UsahaDetailComponent
+    UsahaDetailComponent,
+    ProdukComponent,
+    ProductCardComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
