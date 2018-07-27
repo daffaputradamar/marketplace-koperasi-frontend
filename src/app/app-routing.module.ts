@@ -4,6 +4,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { IndexComponent } from "./components/index/index.component";
 import { ProdukDetailComponent } from "./components/produk-detail/produk-detail.component";
 import { UsahaDetailComponent } from "./components/usaha-detail/usaha-detail.component";
+import { KomentarComponent } from "./components/komentar/komentar.component";
 
 const routes: Routes = [
   {
