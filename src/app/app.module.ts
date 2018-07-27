@@ -6,7 +6,8 @@ import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./layout/navbar/navbar.component";
 import { IndexComponent } from "./components/index/index.component";
 import { ProdukDetailComponent } from "./components/produk-detail/produk-detail.component";
-import { UsahaDetailComponent } from './components/usaha-detail/usaha-detail.component';
+import { UsahaDetailComponent } from "./components/usaha-detail/usaha-detail.component";
+import { KeranjangComponent } from "./components/keranjang/keranjang.component";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { UsahaDetailComponent } from './components/usaha-detail/usaha-detail.com
     NavbarComponent,
     IndexComponent,
     ProdukDetailComponent,
-    UsahaDetailComponent
+    UsahaDetailComponent,
+    KeranjangComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

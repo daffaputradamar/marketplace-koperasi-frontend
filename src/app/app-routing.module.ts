@@ -4,6 +4,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { IndexComponent } from "./components/index/index.component";
 import { ProdukDetailComponent } from "./components/produk-detail/produk-detail.component";
 import { UsahaDetailComponent } from "./components/usaha-detail/usaha-detail.component";
+import { KeranjangComponent } from "./components/keranjang/keranjang.component";
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: "usaha/:id",
     component: UsahaDetailComponent
+  },
+  {
+    path: "/keranjang",
+    component: KeranjangComponent
   }
 ];
 
