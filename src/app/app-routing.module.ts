@@ -1,10 +1,10 @@
-import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
+import { NgModule } from "@angular/core"
+import { Routes, RouterModule } from "@angular/router"
 
-import { IndexComponent } from "./components/index/index.component";
-import { ProdukDetailComponent } from "./components/produk-detail/produk-detail.component";
-import { UsahaDetailComponent } from "./components/usaha-detail/usaha-detail.component";
-import { KomentarComponent } from "./components/komentar/komentar.component";
+import { IndexComponent } from "./components/index/index.component"
+import { ProdukComponent } from "./components/produk/produk.component"
+import { ProdukDetailComponent } from "./components/produk-detail/produk-detail.component"
+import { UsahaDetailComponent } from "./components/usaha-detail/usaha-detail.component"
 
 const routes: Routes = [
   {
@@ -18,8 +18,12 @@ const routes: Routes = [
   {
     path: "usaha/:id",
     component: UsahaDetailComponent
+  },
+  {
+    path: "produk",
+    component: ProdukComponent
   }
-];
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

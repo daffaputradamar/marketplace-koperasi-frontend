@@ -7,6 +7,7 @@ import { NavbarComponent } from "./layout/navbar/navbar.component";
 import { IndexComponent } from "./components/index/index.component";
 import { ProdukDetailComponent } from "./components/produk-detail/produk-detail.component";
 import { UsahaDetailComponent } from './components/usaha-detail/usaha-detail.component';
+import { ProdukComponent } from './components/produk/produk.component';
 import { KomentarComponent } from './components/komentar/komentar.component';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { KomentarComponent } from './components/komentar/komentar.component';
     IndexComponent,
     ProdukDetailComponent,
     UsahaDetailComponent,
+    ProdukComponent,
     KomentarComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
