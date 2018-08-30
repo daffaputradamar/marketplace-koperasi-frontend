@@ -10,6 +10,7 @@ import { UsahaDetailComponent } from './components/usaha-detail/usaha-detail.com
 import { ProdukComponent } from './components/produk/produk.component';
 import { KomentarComponent } from './components/komentar/komentar.component';
 import { KeranjangComponent } from "./components/keranjang/keranjang.component";
+import { BuatTokoComponent } from './components/buat-toko/buat-toko.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { KeranjangComponent } from "./components/keranjang/keranjang.component";
     UsahaDetailComponent,
     ProdukComponent,
     KomentarComponent,
-    KeranjangComponent
+    KeranjangComponent,
+    BuatTokoComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

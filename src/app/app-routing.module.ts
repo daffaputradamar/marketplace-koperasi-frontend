@@ -6,6 +6,7 @@ import { ProdukComponent } from "./components/produk/produk.component";
 import { ProdukDetailComponent } from "./components/produk-detail/produk-detail.component";
 import { UsahaDetailComponent } from "./components/usaha-detail/usaha-detail.component";
 import { KeranjangComponent } from "./components/keranjang/keranjang.component";
+import { BuatTokoComponent } from "./components/buat-toko/buat-toko.component";
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: "keranjang",
     component: KeranjangComponent
+  },
+  {
+    path: "buat-usaha",
+    component: BuatTokoComponent
   }
 ];
 
