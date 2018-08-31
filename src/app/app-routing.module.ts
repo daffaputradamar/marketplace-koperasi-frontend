@@ -7,8 +7,13 @@ import { ProdukDetailComponent } from './components/produk-detail/produk-detail.
 import { UsahaDetailComponent } from './components/usaha-detail/usaha-detail.component'
 import { KeranjangComponent } from './components/keranjang/keranjang.component'
 import { UsahaBuatComponent } from './components/usaha-buat/usaha-buat.component'
+import { LoginComponent } from "./components/login/login.component"
 
 const routes: Routes = [
+  {
+    path: "login",
+    component: LoginComponent
+  },
   {
     path: '',
     component: IndexComponent

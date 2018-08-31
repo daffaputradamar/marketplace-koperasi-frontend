@@ -11,6 +11,7 @@ import { ProdukComponent } from './components/produk/produk.component'
 import { KomentarComponent } from './components/komentar/komentar.component'
 import { KeranjangComponent } from './components/keranjang/keranjang.component'
 import { UsahaBuatComponent } from './components/usaha-buat/usaha-buat.component'
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UsahaBuatComponent } from './components/usaha-buat/usaha-buat.component
     ProdukComponent,
     KomentarComponent,
     KeranjangComponent,
-    UsahaBuatComponent
+    UsahaBuatComponent,
+    LoginComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
