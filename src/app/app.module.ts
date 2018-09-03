@@ -13,14 +13,15 @@ import { KeranjangComponent } from "./components/keranjang/keranjang.component";
 import { UsahaBuatComponent } from "./components/usaha-buat/usaha-buat.component";
 import { LoginComponent } from "./components/login/login.component";
 import { ProdukCartComponent } from "./reusable/produk-cart/produk-cart.component";
-import { KomentarFormComponent } from './reusable/komentar-form/komentar-form.component';
-import { IndexHeaderComponent } from './components/index-header/index-header.component';
-import { MyprofileComponent } from './components/myprofile/myprofile.component';
-import { ProfileComponent } from './components/myprofile/profile/profile.component';
-import { ProfilusahaComponent } from './components/myprofile/profilusaha/profilusaha.component';
-import { ProdukusahaComponent } from './components/myprofile/produkusaha/produkusaha.component';
-import { PenjualanusahaComponent } from './components/myprofile/penjualanusaha/penjualanusaha.component';
-import { UlasanusahaComponent } from './components/myprofile/ulasanusaha/ulasanusaha.component';
+import { KomentarFormComponent } from "./reusable/komentar-form/komentar-form.component";
+import { IndexHeaderComponent } from "./components/index-header/index-header.component";
+import { MyprofileComponent } from "./components/myprofile/myprofile.component";
+import { ProfileComponent } from "./components/myprofile/profile/profile.component";
+import { ProfilusahaComponent } from "./components/myprofile/profilusaha/profilusaha.component";
+import { ProdukusahaComponent } from "./components/myprofile/produkusaha/produkusaha.component";
+import { PenjualanusahaComponent } from "./components/myprofile/penjualanusaha/penjualanusaha.component";
+import { UlasanusahaComponent } from "./components/myprofile/ulasanusaha/ulasanusaha.component";
+import { KonfirmasiPembayaranComponent } from "./components/konfirmasi-pembayaran/konfirmasi-pembayaran.component";
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { UlasanusahaComponent } from './components/myprofile/ulasanusaha/ulasanu
     ProfilusahaComponent,
     ProdukusahaComponent,
     PenjualanusahaComponent,
-    UlasanusahaComponent
+    UlasanusahaComponent,
+    KonfirmasiPembayaranComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
