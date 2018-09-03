@@ -6,11 +6,15 @@ import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./layout/navbar/navbar.component";
 import { IndexComponent } from "./components/index/index.component";
 import { ProdukDetailComponent } from "./components/produk-detail/produk-detail.component";
-import { UsahaDetailComponent } from './components/usaha-detail/usaha-detail.component';
-import { ProdukComponent } from './components/produk/produk.component';
-import { KomentarComponent } from './components/komentar/komentar.component';
+import { UsahaDetailComponent } from "./components/usaha-detail/usaha-detail.component";
+import { ProdukComponent } from "./components/produk/produk.component";
+import { KomentarComponent } from "./components/komentar/komentar.component";
 import { KeranjangComponent } from "./components/keranjang/keranjang.component";
-import { BuatTokoComponent } from './components/buat-toko/buat-toko.component';
+import { UsahaBuatComponent } from "./components/usaha-buat/usaha-buat.component";
+import { LoginComponent } from "./components/login/login.component";
+import { ProdukCartComponent } from "./reusable/produk-cart/produk-cart.component";
+import { KomentarFormComponent } from './reusable/komentar-form/komentar-form.component';
+import { IndexHeaderComponent } from './components/index-header/index-header.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { BuatTokoComponent } from './components/buat-toko/buat-toko.component';
     ProdukComponent,
     KomentarComponent,
     KeranjangComponent,
-    BuatTokoComponent
+    UsahaBuatComponent,
+    LoginComponent,
+    ProdukCartComponent,
+    KomentarFormComponent,
+    IndexHeaderComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

@@ -1,39 +1,44 @@
-import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
+import { NgModule } from '@angular/core'
+import { Routes, RouterModule } from '@angular/router'
 
-import { IndexComponent } from "./components/index/index.component";
-import { ProdukComponent } from "./components/produk/produk.component";
-import { ProdukDetailComponent } from "./components/produk-detail/produk-detail.component";
-import { UsahaDetailComponent } from "./components/usaha-detail/usaha-detail.component";
-import { KeranjangComponent } from "./components/keranjang/keranjang.component";
-import { BuatTokoComponent } from "./components/buat-toko/buat-toko.component";
+import { IndexComponent } from './components/index/index.component'
+import { ProdukComponent } from './components/produk/produk.component'
+import { ProdukDetailComponent } from './components/produk-detail/produk-detail.component'
+import { UsahaDetailComponent } from './components/usaha-detail/usaha-detail.component'
+import { KeranjangComponent } from './components/keranjang/keranjang.component'
+import { UsahaBuatComponent } from './components/usaha-buat/usaha-buat.component'
+import { LoginComponent } from "./components/login/login.component"
 
 const routes: Routes = [
   {
-    path: "",
+    path: "login",
+    component: LoginComponent
+  },
+  {
+    path: '',
     component: IndexComponent
   },
   {
-    path: "produk/:id",
+    path: 'produk/:id',
     component: ProdukDetailComponent
   },
   {
-    path: "usaha/:id",
+    path: 'usaha/:id',
     component: UsahaDetailComponent
   },
   {
-    path: "produk",
+    path: 'produk',
     component: ProdukComponent
   },
   {
-    path: "keranjang",
+    path: 'keranjang',
     component: KeranjangComponent
   },
   {
-    path: "buat-usaha",
-    component: BuatTokoComponent
+    path: 'buatUsaha',
+    component: UsahaBuatComponent
   }
-];
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
