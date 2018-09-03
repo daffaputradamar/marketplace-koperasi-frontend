@@ -1,0 +1,54 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-2 p-3">
+      <h1 class="mb-3"><a routerLink="/">Koperasi</a></h1>
+    </div>
+    <div class="col-md-6 p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="input-group">
+              <input id="table_filter" type="text" class="form-control" placeholder="Search..." aria-label="Text input with segmented button dropdown">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false"><span class="label-icon">Category</span> <span class="caret">&nbsp;</span></button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <ul class="category_filters">
+                    <li class="li-cat">
+                      <input class="" data-label="All" id="all" value="" name="radios" type="radio"><label for="all" class="ml-2">Semua</label>
+                    </li>
+                    <li *ngFor="let kategori of kategoris" class="li-cat">
+                      <input type="radio" name="radios" id="{{kategori.nama}}" value="{{kategori.nama}}"><label class="ml-2"
+                        for="{{kategori.nama}}">{{kategori.nama}}</label>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn btn-primary btn-lg" id="searchBtn" type="submit"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-md-6 p-4">
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pencarian Produk" aria-label="Search">
+        <button class="btn btn-outline-info" type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div> -->
+    <div class="col-md-4 p-4">
+      <div class="d-inline mr-5">
+        <a routerLink="/keranjang">
+          <i class="fas fa-shopping-cart d-inline mr-2"></i>
+          <h6 class="d-inline mb-0">Keranjang Saya</h6>
+        </a>
+      </div>
+      <div class="d-inline">
+        <a routerLink="/usaha/1">
+          <i class="fas fa-home d-inline mr-2"></i>
+          <h6 class="d-inline mb-0">Usaha Saya</h6>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

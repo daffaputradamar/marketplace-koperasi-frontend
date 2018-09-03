@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BuatTokoComponent } from './buat-toko.component';
+import { KomentarFormComponent } from './komentar-form.component';
 
-describe('BuatTokoComponent', () => {
-  let component: BuatTokoComponent;
-  let fixture: ComponentFixture<BuatTokoComponent>;
+describe('KomentarFormComponent', () => {
+  let component: KomentarFormComponent;
+  let fixture: ComponentFixture<KomentarFormComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BuatTokoComponent ]
+      declarations: [ KomentarFormComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BuatTokoComponent);
+    fixture = TestBed.createComponent(KomentarFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
