@@ -8,6 +8,7 @@ import { UsahaDetailComponent } from './components/usaha-detail/usaha-detail.com
 import { KeranjangComponent } from './components/keranjang/keranjang.component'
 import { UsahaBuatComponent } from './components/usaha-buat/usaha-buat.component'
 import { LoginComponent } from "./components/login/login.component"
+import { MyprofileComponent } from "./components/myprofile/myprofile.component";
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'buatUsaha',
     component: UsahaBuatComponent
+  },
+  {
+    path: 'myprofile',
+    component: MyprofileComponent
   }
 ]
 

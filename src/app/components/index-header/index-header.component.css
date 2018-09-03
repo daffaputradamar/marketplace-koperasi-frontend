@@ -40,3 +40,8 @@ a:hover {
 nav a {
   font-size: 1.2rem;
 }
+
+nav a:hover {
+  color: #428bca !important;
+  text-decoration: underline;
+}
