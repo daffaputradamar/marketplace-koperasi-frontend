@@ -15,6 +15,7 @@ import { LoginComponent } from "./components/login/login.component";
 import { ProdukCartComponent } from "./reusable/produk-cart/produk-cart.component";
 import { KomentarFormComponent } from './reusable/komentar-form/komentar-form.component';
 import { IndexHeaderComponent } from './components/index-header/index-header.component';
+import { KonfirmasiPembayaranComponent } from './components/konfirmasi-pembayaran/konfirmasi-pembayaran.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { IndexHeaderComponent } from './components/index-header/index-header.com
     LoginComponent,
     ProdukCartComponent,
     KomentarFormComponent,
-    IndexHeaderComponent
+    IndexHeaderComponent,
+    KonfirmasiPembayaranComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

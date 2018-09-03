@@ -7,11 +7,12 @@ import { ProdukDetailComponent } from './components/produk-detail/produk-detail.
 import { UsahaDetailComponent } from './components/usaha-detail/usaha-detail.component'
 import { KeranjangComponent } from './components/keranjang/keranjang.component'
 import { UsahaBuatComponent } from './components/usaha-buat/usaha-buat.component'
-import { LoginComponent } from "./components/login/login.component"
+import { LoginComponent } from './components/login/login.component'
+import { KonfirmasiPembayaranComponent } from './components/konfirmasi-pembayaran/konfirmasi-pembayaran.component'
 
 const routes: Routes = [
   {
-    path: "login",
+    path: 'login',
     component: LoginComponent
   },
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'buatUsaha',
     component: UsahaBuatComponent
+  },
+  {
+    path: 'konfirmasi',
+    component: KonfirmasiPembayaranComponent
   }
 ]
 
