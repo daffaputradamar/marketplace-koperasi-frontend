@@ -16,13 +16,14 @@ import { ProdukCartComponent } from "./reusable/produk-cart/produk-cart.componen
 import { KomentarFormComponent } from "./reusable/komentar-form/komentar-form.component";
 import { IndexHeaderComponent } from "./components/index-header/index-header.component";
 import { MyprofileComponent } from "./components/myprofile/myprofile.component";
-import { ProfileComponent } from "./components/myprofile/profile/profile.component";
-import { ProfilusahaComponent } from "./components/myprofile/profilusaha/profilusaha.component";
-import { ProdukusahaComponent } from "./components/myprofile/produkusaha/produkusaha.component";
-import { PenjualanusahaComponent } from "./components/myprofile/penjualanusaha/penjualanusaha.component";
-import { UlasanusahaComponent } from "./components/myprofile/ulasanusaha/ulasanusaha.component";
+import { ProfileComponent } from "./components/myusaha/profile/profile.component";
+import { ProfilusahaComponent } from "./components/myusaha/profilusaha/profilusaha.component";
+import { ProdukusahaComponent } from "./components/myusaha/produkusaha/produkusaha.component";
+import { PenjualanusahaComponent } from "./components/myusaha/penjualanusaha/penjualanusaha.component";
+import { UlasanusahaComponent } from "./components/myusaha/ulasanusaha/ulasanusaha.component";
 import { KonfirmasiPembayaranComponent } from "./components/konfirmasi-pembayaran/konfirmasi-pembayaran.component";
-import { PembelianComponent } from './components/pembelian/pembelian.component';
+import { PembelianComponent } from "./components/pembelian/pembelian.component";
+import { MyusahaComponent } from "./components/myusaha/myusaha.component";
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { PembelianComponent } from './components/pembelian/pembelian.component';
     PenjualanusahaComponent,
     UlasanusahaComponent,
     KonfirmasiPembayaranComponent,
-    PembelianComponent
+    PembelianComponent,
+    MyusahaComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

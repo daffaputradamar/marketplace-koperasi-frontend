@@ -11,6 +11,7 @@ import { LoginComponent } from "./components/login/login.component";
 import { MyprofileComponent } from "./components/myprofile/myprofile.component";
 import { KonfirmasiPembayaranComponent } from "./components/konfirmasi-pembayaran/konfirmasi-pembayaran.component";
 import { PembelianComponent } from "./components/pembelian/pembelian.component"
+import { MyusahaComponent } from "./components/myusaha/myusaha.component";
 
 const routes: Routes = [
   {
@@ -52,6 +53,10 @@ const routes: Routes = [
   {
     path: "pembelian",
     component: PembelianComponent
+  },
+  {
+    path: 'myusaha',
+    component: MyusahaComponent
   }
 ];
 
