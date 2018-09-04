@@ -21,8 +21,12 @@
         <td>Belum Dikonfirmasi</td>
         <td>
           <div class="btn-group" role="group" aria-label="">
-            <button type="button" class="btn btn-primary">Detail</button>
-            <button type="button" class="btn btn-success">Upload Bukti</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#detailPembelian">
+              Detail
+            </button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#uploadBukti">
+              Upload Bukti
+            </button>
             <button type="button" class="btn btn-danger">Hapus</button>
           </div>
         </td>
@@ -35,11 +39,78 @@
         <td>Sudah Dikonfirmasi</td>
         <td>
           <div class="btn-group" role="group" aria-label="">
-            <button type="button" class="btn btn-primary">Detail</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#detailPembelian">
+              Detail
+            </button>
             <button type="button" class="btn btn-danger">Hapus</button>
           </div>
         </td>
       </tr>
     </tbody>
   </table>
+</div>
+
+<!-- Modal Upload Bukti -->
+<div class="modal fade" id="uploadBukti" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center p-3">
+        <div class="border pt-5 pb-5">
+          Drop Image Here
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Detail Pembelian -->
+<div class="modal fade" id="detailPembelian" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modelTitleId">Detail Pembelian</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama Barang</th>
+              <th>Harga</th>
+              <th>Jumlah</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Pensil</td>
+              <td>Rp. 3.000</td>
+              <td>3</td>
+              <td>Rp. 9.000</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Baju Akatsuki</td>
+              <td>Rp. 50.000</td>
+              <td>4</td>
+              <td>Rp. 200.000</td>
+            </tr>
+            <tr>
+              <th colspan="4" class="text-right">Total Pembelian</th>
+              <td>Rp. 209.000</td>
+            </tr>
+            <tr>
+              <th colspan="4" class="text-right">Ongkos Kirim</th>
+              <td>Rp. 20.000</td>
+            </tr>
+            <tr>
+              <th colspan="4" class="text-right">Total Bayar</th>
+              <td class="text-lg text-success"><b>Rp. 229.000</b></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
