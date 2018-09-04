@@ -1,0 +1,65 @@
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pribadi-tab" data-toggle="tab" href="#pribadi" role="tab" aria-controls="pribadi" aria-selected="true">Saldo
+      Pribadi
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="usaha-tab" data-toggle="tab" href="#usaha" role="tab" aria-controls="usaha" aria-selected="false">Saldo
+      Usaha
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="hasil-usaha-tab" data-toggle="tab" href="#hasil-usaha" role="tab" aria-controls="hasil-usaha" aria-selected="false">Sisa
+      Hasil Usaha</a>
+  </li>
+</ul>
+<div class="tab-content pt-4" id="myTabContent">
+  <div class="tab-pane fade show active" id="pribadi" role="tabpanel" aria-labelledby="pribadi-tab">
+    <h2>Rp. 100.000</h2>
+    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#modelId">
+      <span>Log Saldo</span>
+    </button>
+  </div>
+  <div class="tab-pane fade" id="usaha" role="tabpanel" aria-labelledby="usaha-tab">
+    <h2>Rp. 200.000</h2>
+    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#modelId">
+      <span>Log Saldo</span>
+    </button>
+  </div>
+  <div class="tab-pane fade" id="hasil-usaha" role="tabpanel" aria-labelledby="hasil-usaha-tab">
+    <h2>Rp. 500.000</h2>
+    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#modelId">
+      <span>Log Saldo</span>
+    </button>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modelTitleId">Log Saldo</h4>
+      </div>
+      <div class="modal-body">
+
+        <span class="text-secondary small">12/02/2018</span>
+        <div class="alert alert-success" role="alert">
+          <strong>Saldo bertambah sebesar Rp. 100.000</strong>
+        </div>
+
+        <span class="text-secondary small">20/02/2018</span>
+        <div class="alert alert-danger" role="alert">
+          <strong>Saldo berkurang sebesar Rp. 50.000 untuk pembayaran pembelian</strong>
+        </div>
+
+        <span class="text-secondary small">30/02/2018</span>
+        <div class="alert alert-success" role="alert">
+          <strong>Anda melakukan top up sebesar Rp. 50.000</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
