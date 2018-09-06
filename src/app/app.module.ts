@@ -25,6 +25,7 @@ import { KonfirmasiPembayaranComponent } from "./components/konfirmasi-pembayara
 import { PembelianComponent } from "./components/pembelian/pembelian.component";
 import { MyusahaComponent } from "./components/myusaha/myusaha.component";
 import { SaldoComponent } from './components/myusaha/saldo/saldo.component';
+import { DaftarUserComponent } from './components/daftar-user/daftar-user.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { SaldoComponent } from './components/myusaha/saldo/saldo.component';
     KonfirmasiPembayaranComponent,
     PembelianComponent,
     MyusahaComponent,
-    SaldoComponent
+    SaldoComponent,
+    DaftarUserComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

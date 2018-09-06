@@ -12,6 +12,7 @@ import { MyprofileComponent } from "./components/myprofile/myprofile.component";
 import { KonfirmasiPembayaranComponent } from "./components/konfirmasi-pembayaran/konfirmasi-pembayaran.component";
 import { PembelianComponent } from "./components/pembelian/pembelian.component"
 import { MyusahaComponent } from "./components/myusaha/myusaha.component";
+import { DaftarUserComponent } from "./components/daftar-user/daftar-user.component";
 
 const routes: Routes = [
   {
@@ -57,6 +58,10 @@ const routes: Routes = [
   {
     path: 'myusaha',
     component: MyusahaComponent
+  },
+  {
+    path: 'daftar',
+    component: DaftarUserComponent
   }
 ];
 
