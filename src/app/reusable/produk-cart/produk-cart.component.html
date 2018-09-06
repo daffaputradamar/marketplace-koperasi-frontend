@@ -1,14 +1,17 @@
 <div class="container">
   <div class="row">
-    <div *ngFor="let produk of produks" class="col-md-3 d-flex align-items-stretch">
-      <div class="card mb-4">
-        <a routerLink="/produk/{{produk.id}}">
-          <img class="card-img-top" src={{produk.foto}} alt="Card image cap">
-        </a>
-        <div class="card-body">
-          <h5 class="card-title mb-1">{{produk.nama}}</h5>
-          <p class="text-success">Rp. {{ produk.harga }}</p>
-          <p class="card-text mt-2">{{ produk.keterangan }}</p>
+    <div *ngFor="let produk of produks; let i = index" class="col-md-3 d-flex align-items-stretch">
+      <div class="card mb-4 produk-card">
+        <div class="produkimage">
+          <a routerLink="/produk/{{produk.id}}">
+            <img class="card-img-top img-fluid" src={{produk.foto}} alt="Card image cap">
+          </a>
+        </div>
+        <div class="card-body text-center">
+          <p class="text-success"><b>Rp. {{ produk.harga }}</b></p>
+          <a routerLink="/produk/{{produk.id}}">
+            <p class="card-title mb-1 produk">{{produk.nama}}</p>
+          </a>
         </div>
         <div class="card-footer">
           <a routerLink="/produk/{{produk.id}}" class="btn btn-block btn-primary">Tambah Ke Keranjang</a>

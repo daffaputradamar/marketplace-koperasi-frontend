@@ -25,7 +25,8 @@ import { KonfirmasiPembayaranComponent } from './components/konfirmasi-pembayara
 import { PembelianComponent } from './components/pembelian/pembelian.component'
 import { MyusahaComponent } from './components/myusaha/myusaha.component'
 import { SaldoComponent } from './components/saldo/saldo.component'
-import { DaftarUserComponent } from './components/daftar-user/daftar-user.component'
+import { DaftarUserComponent } from './components/daftar-user/daftar-user.component';
+import { LupaPasswordComponent } from './components/lupa-password/lupa-password.component'
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { DaftarUserComponent } from './components/daftar-user/daftar-user.compon
     PembelianComponent,
     MyusahaComponent,
     SaldoComponent,
-    DaftarUserComponent
+    DaftarUserComponent,
+    LupaPasswordComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
