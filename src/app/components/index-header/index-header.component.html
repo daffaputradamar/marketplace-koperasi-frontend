@@ -1,80 +1,160 @@
-<div class="container">
-  <div class="row my-4">
+<div class="container-fluid">
+  <div class="row">
     <div class="col-md-2 p-3">
-      <h1 class="mb-3"><a routerLink="/">Koperasi</a></h1>
+      <h1 class="mb-3 ml-3"><a routerLink="/">Koperasi</a></h1>
     </div>
     <div class="col-md-6 p-4">
-      <div class="container">
+      <div class="">
         <div class="row">
           <div class="col-md-12">
             <div class="input-group">
-              <input id="table_filter" type="text" class="form-control" placeholder="Cari Produk..." aria-label="Text input with segmented button dropdown">
+              <input
+                id="table_filter"
+                type="text"
+                class="form-control"
+                placeholder="Cari Produk..."
+                aria-label="Text input with segmented button dropdown"
+              />
               <div class="input-group-btn">
-                <button type="button" class="btn btn-lg btn-outline-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false"><span class="label-icon">Kategori</span> <span class="caret ml-3">&nbsp;</span></button>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-outline-primary dropdown-toggle dropdown-toggle-split"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="label-icon">Kategori</span>
+                  <span class="caret ml-3">&nbsp;</span>
+                </button>
                 <div class="dropdown-menu dropdown-menu-right">
                   <ul class="category_filters">
                     <li class="li-cat">
-                      <input class="" data-label="All" id="all" value="" name="radios" type="radio"><label for="all" class="ml-2">Semua</label>
+                      <input
+                        class=""
+                        data-label="All"
+                        id="all"
+                        value=""
+                        name="radios"
+                        type="radio"
+                      /><label for="all" class="ml-2">Semua</label>
                     </li>
                     <li *ngFor="let kategori of kategoris" class="li-cat">
-                      <input type="radio" name="radios" id="{{kategori.nama}}" value="{{kategori.nama}}"><label class="ml-2"
-                        for="{{kategori.nama}}">{{kategori.nama}}</label>
+                      <input
+                        type="radio"
+                        name="radios"
+                        id="{{kategori.nama}}"
+                        value="{{kategori.nama}}"
+                      /><label class="ml-2" for="{{kategori.nama}}">{{
+                        kategori.nama
+                      }}</label>
                     </li>
                   </ul>
                 </div>
-                <button class="btn btn-primary btn-lg" id="searchBtn" type="submit"><i class="fas fa-search"></i></button>
+                <button
+                  class="btn btn-primary btn-lg"
+                  id="searchBtn"
+                  type="submit"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-md-4 p-4">
-      <div class="d-inline mr-5">
+    <div
+      class="col-md-4"
+      style="display: flex; align-items: center; justify-content: space-around"
+    >
+      <div>
         <a routerLink="/keranjang">
           <i class="fas fa-shopping-cart d-inline mr-2"></i>
           <h6 class="d-inline mb-0">Keranjang</h6>
         </a>
       </div>
-      <div class="d-inline">
+      <div>
         <a routerLink="/myusaha">
           <i class="fas fa-home d-inline mr-2"></i>
           <h6 class="d-inline mb-0">Usaha Saya</h6>
         </a>
       </div>
+      <button
+        class="btn btn-outline-primary dropdown-toggle"
+        type="button"
+        id="triggerId"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <i class="fas fa-user-alt"></i> User
+      </button>
+
+      <div
+        class="dropdown-menu dropdown-menu-right"
+        aria-labelledby="triggerId"
+      >
+        <a routerLink="/myprofile" class="dropdown-item">Profil</a>
+        <a routerLink="/pembelian" class="dropdown-item">Pembelian</a>
+        <a routerLink="/buatUsaha" class="dropdown-item">Usaha Saya</a>
+        <a routerLink="/saldo" class="dropdown-item">Saldo</a>
+        <a routerLink="#" class="dropdown-item">Logout</a>
+      </div>
     </div>
   </div>
 </div>
-<!-- <div class="shadow p-4 bg-white rounded border-top">
-  <ul class="nav-index pb-2">
-    <li class="float-left"><a routerLink="/">Beranda</a></li>
-    <li class="float-left"><a routerLink="/produk">Produk</a></li>
-    <li class="float-left"><a>Beranda</a></li>
-    <li class="float-left"><a>Beranda</a></li>
-  </ul>
-</div> -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item ml-3">
-        <a class="nav-link" routerLink="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a
+          class="nav-link"
+          routerLink="/"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
           Beranda
         </a>
       </li>
       <li class="nav-item ml-3">
-        <a class="nav-link" routerLink="/produk" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a
+          class="nav-link"
+          routerLink="/produk"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
           Produk
         </a>
       </li>
       <li class="nav-item ml-3">
-        <a class="nav-link" routerLink="/usaha/1" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a
+          class="nav-link"
+          routerLink="/usaha/1"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
           Usaha
         </a>
       </li>
       <li class="nav-item ml-3">
-        <a class="nav-link" routerLink="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a
+          class="nav-link"
+          routerLink="/"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
           Tentang
         </a>
       </li>
